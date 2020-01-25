@@ -1,0 +1,223 @@
+
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Destination Wedding Planner in Goa</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie7.css">
+	<![endif]-->
+</head>
+<body>
+	<div id="header">
+		<div>
+			<a href="index.html"><img src="images/logo.png" alt="Image"></a>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+                                                                                                
+                                                                                             
+			                   <li>
+				               <a href=" cartering.html"> Cartering</a>
+			                          </li>
+				<li>
+					<a href="gallery.html">Gallery</a>
+				</li>
+				
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			
+			
+                                                                                        <li>
+				<a href="bookings.html">Bookings</a>
+			</li>
+			</ul>
+		</div>
+		<div id="figure">
+			<div>
+				<a href="index.html"><img src="images/couple.png" alt="Image"></a>
+			</div>
+		</div>
+	</div>
+
+
+</head>
+<style>
+input[type="email"]:valid{
+        outline: 2px solid green;
+    }
+    input[type="email"]:invalid{
+        outline: 2px solid red;
+    }
+	input[type="mobile"]:valid{
+        outline: 2px solid green;
+    }
+    input[type="mobile"]:invalid{
+        outline: 2px solid red;	
+    }
+	input[type=submit]{
+	cursor: pointer;
+    background-color: #45a049;
+            
+	}
+*{
+	margin: 2px;
+	padding: 0px;
+	margin bottom: 10px;
+	box-sizing: border-box;
+	font-family: ;
+}
+
+header{
+	background-image: urlwedding.png.);
+	height: auto;
+	background-size: cover;
+	background-position: center;
+}
+
+ul{ 
+   float: right;
+   list-style-type: none
+   margin-top: 30px;
+   margin-bottom
+}
+	 
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: #acsas;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition 0.6s ease;
+	border-radius: 4px; 
+}
+
+
+
+
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+li{
+	font-size: 20px;
+	
+}
+.logo img{
+	float: left;
+	width: 0px;
+	height: 0px;
+}
+
+
+}
+</style>
+<script>
+function validateform() {
+                var name = document.reg_form.uname.value;
+
+                if (name === null || name === "") {
+                    window.alert("name can't be left blank");
+					document.getElementById("un").focus();
+                    return false;
+					}     
+				var name = document.reg_form.lname.value;
+
+                if (name === null || name === "") {
+                    window.alert("lastname can't be left blank");
+					document.getElementById("um").focus();
+                    return false;
+                }
+				var mob_num = document.reg_form.mobile.value;
+                if (isNaN(mob_num)) {
+                    document.getElementById("mob").innerHTML = "Enter Numeric value only";
+                    document.getElementById("ph").focus();
+					return false;
+                } else if (mob_num.length !== 10) {
+                    document.getElementById("mob").innerHTML ="Mobile number should be of 10 digits";
+                    document.getElementById("ph").focus();
+					return false;
+                } else {
+				    document.getElementById("mob").innerHTML = "";
+                    return true;
+                }
+				}
+				
+var date = document.getElementById("mydate").value;
+        alert(date);
+	var datetime = document.getElementById("mydatetime").value;
+        alert(datetime);
+		
+	var email = document.getElementById("myemail").value;
+        alert(email);
+	 var month = document.getElementById("mymonth").value;
+        alert(month);
+	var time = document.getElementById("mytime").value;
+        alert(time);
+		
+</script>
+
+
+          
+
+			 
+	          
+		
+
+<div style="margin: auto; display: table;">
+	
+	<form name="reg_form" onsubmit="return validateform()"  >
+	
+<div style="width: 909px;">
+</div>
+<div style="padding-bottom: 18px;font-size : 24px;"><font color="black">BOOKING NOW</font></div>
+<div style="display: flex; padding-bottom: 18px;width : 450px;">
+<div style=" margin-left : 0; margin-right : 1%;  width : 49%;"><font color="black"><label>First name</label><span style="color: red;"> *</span></font><br/>
+<input type="text"  name="uname" id="un" value=""  style="width: 100%;"  />
+</div>
+<div style=" margin-left : 1%; margin-right : 0; width : 49%;"><font color="black"><label>Last name</label><span style="color: red;"> *</span></font><br/>
+<input type="text"  name="lname"  id="um" value=""  style="width: 100%;"  />
+</div>
+</div><div style="padding-bottom: 18px;"><font color="black"><label>Phone</label><span style="color: red;"> *</span></font><br/>
+<input type="text" name="mobile"  value="" id="ph"   style="width : 200px;"  />
+</div>
+<div style="padding-bottom: 18px;"><font color="black">Email<span style="color: red;"> *</span></font><br/>
+<input type="email" name="email" value="" id="myemail"  /><br>
+</div>
+<div style="padding-bottom: 18px;"><font color="black"> date and time<span style="color: red;"> *</span></font><br/>
+<input type="datetime-local" id="mydatetime"  /><br>
+<div style="padding-bottom: 18px;"><font color="black">Adress</font><br/>
+<input type="number" id="" name="" style="width : 70px;" />
+</div>
+
+
+<div class="submit" style="padding-bottom: 18px;"><input name="summitbtn" value="submit" type="submit"/></div>
+</form>
+<font color="#fff"><span id="mob"></span><br>
+</div>
+</body>
+
+<script>
+var date = new Date();
+
+var day = date.getDate();
+var month = date.getMonth() + 1;
+var year = date.getFullYear();
+
+if (month < 10) month = "0" + month;
+if (day < 10) day = "0" + day;
+
+var today = year + "-" + month + "-" + day;       
+document.getElementById("mydate").value = today;
+
+</script>
+</html>
